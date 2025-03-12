@@ -84,6 +84,7 @@ html{
     color: black;
     padding-top: 30px;
     text-align: center;
+    padding-bottom: 40px;
   }
   
   
@@ -112,7 +113,7 @@ html{
 
 /* end */
 img {
-    width: 50%;
+    width: 100%;
     height: auto;
   }
 
@@ -140,7 +141,7 @@ ul, ol {
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 15px;
     width: 100%;
 }
 .Title{
@@ -154,6 +155,11 @@ ul, ol {
     flex-direction: column;
 }
 .page.overview p{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.page.overview h2{
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
@@ -203,13 +209,27 @@ ul, ol {
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
-    grid-row: 4/9;
-    border-left: 2px solid #00274C;
+    grid-row: 4/10;
+    /* border-left: 2px solid #00274C; */
 }
 .extra.overview{
     grid-column: 1/-1;
+    padding-bottom: 20px;
 }
 
+.advisor.overview{
+    grid-column: 1/-1;
+    border-bottom: #00274C 2px solid;
+    padding-bottom: 20px;
+}
+.schedule.overview{
+    grid-column: 1/2;
+    border-right: #00274C 2px solid;
+}
+.additional.overview{
+    grid-column: 2/3;
+    padding-left: 5px;
+}
 
 /* .health-image, .campus-image{
     display: flex;
