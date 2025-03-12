@@ -18,7 +18,7 @@ html{
     background-repeat: no-repeat; /* Parallax effect */
     background-size: cover;       /* Parallax effect */
     color: #00274C;
-    /* height: 40px;                Parallax effect */
+    /* height: 400px;                /*Parallax effect */
   }
   
   /* .page.overview{
@@ -34,7 +34,7 @@ html{
 
   h1{
     font-size: 50px;
-    line-height: 1;
+    line-height: 2;
     /* padding: 50px 0; */
     text-align: center;
   }
@@ -112,7 +112,7 @@ html{
 
 /* end */
 img {
-    width: 25%;
+    width: 50%;
     height: auto;
   }
 
@@ -137,7 +137,86 @@ ul, ol {
     border: 2px solid;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+}
+.Title{
+    grid-column: 1/-1;
+}
+.page.overview{
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page.overview p{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.content.overview{
+    grid-column: 1/-1;
+}
 
+.health.overview{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    grid-row: 4;
+}
+.health-image{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    grid-row: 5;
+}
+.UHS.overview{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    grid-row: 6;
+}
+.sports.overview{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    grid-row: 7;
+}
+.campus-image{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    grid-row: 8;
+}
+.program.overview{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    grid-row: 9;
+}
+
+.mental.overview{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    grid-row: 4/9;
+    border-left: 2px solid #00274C;
+}
+.extra.overview{
+    grid-column: 1/-1;
+}
+
+
+/* .health-image, .campus-image{
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-content: center;
+} */
 /* .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
